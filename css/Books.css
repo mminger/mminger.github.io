@@ -1,0 +1,391 @@
+* { box-sizing: border-box;}
+/* Medium devices (landscape tablets, 768px and below) */
+  /*Top border with links*/
+  .topnav{
+  overflow: hidden;
+  background-color: #708090;
+  border-style: solid;
+  border-color: silver
+  }
+
+  .authorlogo {
+    width: 125px;
+     height: 114.2px;
+     object-fit: cover;
+     margin-top: 7px;
+     float: left;
+   }
+
+  .topnav a {
+    font-family: verdana;
+    float: left;
+    color: white;
+    margin-left: 5px;
+    padding: 10px 5px 0px 15px;
+    text-decoration: none;
+    font-size: 25px;
+  }
+  /* Under nav*/
+  .underHeader {
+    background-color: #708090;
+    overflow: hidden;
+    height: 10px;
+  }
+
+  /*Book series links*/
+  .bookLinks {
+    background-color: #708090;
+    overflow: hidden;
+  }
+
+  .bookLinks a:link {
+    background-color: #f0f8ff;
+    border: 2px #708090;
+    color: black;
+    float: left;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 17px;
+  }
+  .bookLinks a:hover {
+    background-color: #f0f8ff;
+    color: black;
+  }
+
+  .bookLinks a:active {
+    background-color: #f0f8ff;
+    color: black;
+  }
+  /*coming soon*/
+  .comingSoonContainer{
+    width:100%;
+  }
+  .comingSoon {
+  /*display:inline-block;*/
+  background-color:#708090;
+  border-style: outset;
+  border-width: thick;
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 30px 10px 30px;
+  width:330px;
+  margin-bottom: 40px;
+  }
+  .vol1 {
+  width:240px;
+  height: 370px;
+  margin-left: 10px;
+  }
+  .summary1Text{
+  margin-left: 15px;
+  margin-right: 15px;
+  }
+  .summary1Text h4{
+    display: none;
+  }
+  .summary2{
+    display:flex;
+    flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .summary2 img{
+    margin:auto;
+  }
+  .vol2 {
+  width:240px;
+  height: 370px;
+  margin-left: 10px;
+  }
+  .summary1{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .summary1 img{
+    margin:auto;
+  }
+  .book1Container1{
+    display:flex;
+    flex-direction: column;
+  }
+
+  .summary2Text{
+  margin-left: 15px;
+  }
+
+  /*Avaliable Now*/
+  .avaliableNowContainer{
+    width:100%;
+  }
+  .avaliableNow {
+  /*display:inline-block;*/
+  background-color:#708090;
+  border-style: outset;
+  border-width: thick;
+  justify-content: center;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 30px 10px 30px;
+  width:330px;
+  margin-bottom: 40px;
+  text-align: center;
+  }
+
+  .phonePreview1{
+    background-color: #708090;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .previewText1 {
+    display: none;
+  }
+
+  .footer{
+        text-align: center;
+        }
+
+  .socialMedia {
+        font-size: 30px;
+        }
+
+@media only screen and (min-width: 768px) {
+  /* For Desktop */
+  .book1Container{
+    display:flex;
+    flex-direction: row;
+  }
+
+  .vol1 {
+  width:240px;
+  height: 370px;
+  margin-left: 10px;
+  }
+
+  .summary1Text{
+  margin-left: 15px;
+  }
+  .summary1Text h4{
+    display: block;
+  }
+    /*Top border with links*/
+    .topnav{
+    overflow: hidden;
+    background-color: #708090;
+    border-style: solid;
+    border-color: silver
+    }
+
+    .authorlogo {
+      width: 125px;
+       height: 114.2px;
+       object-fit: cover;
+       margin-top: 7px;
+       float: left;
+     }
+
+    .topnav a {
+      font-family: verdana;
+      float: left;
+      color: white;
+      text-align: left;
+      margin-top: 5px;
+      padding: 50px 15px 20px 200px;
+      text-decoration: none;
+      font-size: 25px;
+    }
+    /* Under nav*/
+    .underHeader {
+      background-color: #708090;
+      overflow: hidden;
+      height: 10px;
+    }
+
+    /*Book series links*/
+    .bookLinks {
+      background-color: #708090;
+      overflow: hidden;
+    }
+
+    .bookLinks a:link {
+      background-color: #f0f8ff;
+      border: 2px #708090;
+      color: black;
+      float: left;
+      text-align: center;
+      padding: 14px 16px;
+      font-size: 17px;
+    }
+    .bookLinks a:hover {
+      background-color: #f0f8ff;
+      color: black;
+    }
+
+    .bookLinks a:active {
+      background-color: #f0f8ff;
+      color: black;
+    }
+    /*coming soon*/
+    .comingSoonContainer{
+      width:100%;
+    }
+    .comingSoon {
+    /*display:inline-block;*/
+    background-color:#708090;
+    border-style: outset;
+    border-width: thick;
+    justify-content: center;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 30px 10px 30px;
+    width:330px;
+    margin-bottom: 40px;
+    }
+
+    .summary2{
+      flex-direction: row;
+    }
+    .vol2 {
+    width:240px;
+    height: 370px;
+    margin-left: 10px;
+    }
+
+    .summary2Text{
+    margin-left: 15px;
+    }
+  /*coming soon*/
+  .avaliableNowContainer{
+    width:100%;
+  }
+  .avaliableNow {
+  /*display:inline-block;*/
+  background-color:#708090;
+  border-style: outset;
+  border-width: thick;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  padding: 0px 30px 10px 30px;
+  width:375px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  }
+
+  .summaryText{
+  margin-left: 15px;
+  }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+  margin-top: 150px;
+    margin-left: 75px;
+  }
+  .cover1{
+    width:240px;
+    height:370px;
+  }
+  .cover1:hover .vol1 {
+    opacity: 0.3;
+  }
+
+  .cover1:hover .middle {
+    opacity: 1;
+  }
+
+  .previewText1 {
+    display: block;
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+  .phonePreview1{
+    display: none;
+  }
+
+  .footer{
+    display: block;
+    position: relative;
+    left:0;
+    bottom: 0;
+    background-color: #708090;
+    overflow: hidden;
+    width: 100%;
+    height:75px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .leftText {
+    margin-left: 20px;
+  color: white;
+  }
+
+  .socialMedia{
+    float: right;
+  }
+  .fa {
+    font-size: 30px;
+    width: 50px;
+    text-decoration: none;
+    margin: 7px;
+  }
+
+  .fa:hover {
+      opacity: 0.7;
+  }
+
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+
+  .fa-vimeo {
+    background: #45bbff;
+    color: white;
+  }
+
+  .fa-tumblr {
+    background: #2c4762;
+    color: white;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
