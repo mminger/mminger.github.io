@@ -5,25 +5,42 @@
   overflow: hidden;
   background-color: #708090;
   border-style: solid;
-  border-color: silver
+  border-color: silver;
+  display: flex;
+  flex-direction: column;
+  }
+
+  nav{
+    background-color: #708090;
   }
 
   .authorlogo {
     width: 125px;
      height: 114.2px;
      object-fit: cover;
-     margin-top: 7px;
+     margin: 7px;
      float: left;
    }
 
   .topnav a {
     font-family: verdana;
-    float: left;
     color: white;
-    margin-left: 5px;
-    padding: 10px 5px 0px 15px;
+    display: block;
+    padding: 12px;
     text-decoration: none;
     font-size: 25px;
+    text-align: center;
+    opacity: 0.5;
+  }
+  .topnav a.active{
+    opacity: 1.0;
+  }
+
+  p.site-name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
   }
   /* Under nav*/
   .underHeader {
@@ -180,7 +197,12 @@
     overflow: hidden;
     background-color: #708090;
     border-style: solid;
-    border-color: silver
+    border-color: silver;
+    flex-direction: row;
+    }
+
+    nav{
+      background-color: #708090;
     }
 
     .authorlogo {
@@ -197,9 +219,14 @@
       color: white;
       text-align: left;
       margin-top: 5px;
-      padding: 50px 15px 20px 200px;
+      margin-left: 10%;
+      padding: 12px;
       text-decoration: none;
       font-size: 25px;
+      opacity: 0.5;
+    }
+    .topnav a.active{
+      opacity: 1.0;
     }
     /* Under nav*/
     .underHeader {
@@ -235,6 +262,9 @@
     /*coming soon*/
     .comingSoonContainer{
       width:100%;
+    }
+    .links-container{
+      width: 100%;
     }
     .comingSoon {
     /*display:inline-block;*/

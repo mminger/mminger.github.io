@@ -10,26 +10,43 @@
   overflow: hidden;
   background-color: #708090;
   border-style: solid;
-  border-color: silver
+  border-color: silver;
+  display: flex;
+  flex-direction: column;
+  }
+
+  nav{
+    background-color: #708090;
   }
 
   .authorlogo {
     width: 125px;
      height: 114.2px;
      object-fit: cover;
-     margin-top: 7px;
+     margin: 7px;
      float: left;
    }
 
-   .topnav a {
-     font-family: verdana;
-     float: left;
-     color: white;
-     margin-left: 5px;
-     padding: 10px 5px 0px 15px;
-     text-decoration: none;
-     font-size: 25px;
-   }
+  .topnav a {
+    font-family: verdana;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    opacity: 0.5;
+  }
+  .topnav a.active{
+    opacity: 1.0;
+  }
+
+  p.site-name{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
 
   /* Under nav*/
   .underHeader {
@@ -54,7 +71,8 @@
   }
 
   .author_logo{
-    width: 340px;
+    max-width: 340px;
+    width: 100%;
     height: auto;
     justify-content: center;
     margin-left: auto;
@@ -74,36 +92,49 @@
 
       /*Top border with links*/
       .topnav{
-      overflow: hidden;
-      background-color: #708090;
-      border-style: solid;
-      border-color: silver
-      }
+        overflow: hidden;
+        background-color: #708090;
+        border-style: solid;
+        border-color: silver;
+        flex-direction: row;
+        }
 
-      .authorlogo {
-        width: 125px;
-         height: 114.2px;
-         object-fit: cover;
-         margin-top: 7px;
-         float: left;
-       }
+        nav{
+          background-color: #708090;
+        }
 
-      .topnav a {
-        font-family: verdana;
-        float: left;
-        color: white;
-        text-align: left;
-        margin-top: 5px;
-        padding: 50px 15px 20px 200px;
-        text-decoration: none;
-        font-size: 25px;
-      }
+        .authorlogo {
+          width: 125px;
+           height: 114.2px;
+           object-fit: cover;
+           margin-top: 7px;
+           float: left;
+         }
+
+        .topnav a {
+          font-family: verdana;
+          float: left;
+          color: white;
+          text-align: left;
+          margin-top: 5px;
+          margin-left: 10%;
+          padding: 12px;
+          text-decoration: none;
+          font-size: 25px;
+          opacity: 0.5;
+        }
+        .topnav a.active{
+          opacity: 1.0;
+        }
       /* Under nav*/
       .underHeader {
         background-color: #708090;
         overflow: hidden;
         height: 10px;
       }
+      .links-container{
+      width: 100%;
+    }
       .aboutMeContainer{
         width: 100%;
       }
@@ -129,8 +160,9 @@
       }
 
       .author_logo{
-        width: 350px;
-        height: 320px;
+        max-width: 350px;
+        width: 100%;
+        height: auto;
         margin-left: auto;
         margin-right: auto;
         float: left;
