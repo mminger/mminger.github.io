@@ -275,12 +275,12 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 30px 10px 30px;
+    padding: 0px 30px 10px 20px;
     width:330px;
     margin-bottom: 40px;
     }
 
-    .summary2{
+    /*.summary2{
       flex-direction: row;
     }
     .vol2 {
@@ -292,6 +292,7 @@
     .summary2Text{
     margin-left: 15px;
     }
+    */
   /*coming soon*/
   .avaliableNowContainer{
     width:100%;

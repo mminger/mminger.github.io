@@ -48,69 +48,66 @@ p.site-name{
     overflow: hidden;
     height: 10px;
   }
+  .mySlides {display: none}
 
-  .booksTitleContainer{
-    width: 100%;
+  div.mySlides img{
+    width:95%;
+    margin:auto;
+    height:auto;
+    display:block;
+    border: solid 1px #323232;
+    pointer-events: none;
   }
-  .booksTitle {
-  /*display:inline-block;*/
-  background-color:#708090;
-  border-style: outset;
-  border-width: thick;
-  justify-content: center;
-  color: white;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px 30px 10px 30px;
-  width:330px;
-  margin-bottom: 40px;
-  text-align: center;
+
+  .slideshow-container {
+    width:95%;
+    margin: auto;
+    position: relative;
+    text-align: center;
   }
-  .vol1 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          max-width: 300px;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          font-family: arial;
-          padding-bottom: 20px;
-          font-size: 20px;
-          margin-bottom: 200px;
-        }
 
-.vol1button {
-          padding: 12px;
-          float:left;
-          color: white;
-          background-color: #708090;
-          text-align: center;
-          cursor: pointer;
-          width: 300px;
-          border-style: outset;
-        }
 
-        .vol2 {
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          max-width: 300px;
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          padding-bottom: 20px;
-          font-family: arial;
-          font-size: 20px;
-          margin-bottom: 50px;
-        }
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.4);
+  }
 
-        .vol2button {
-          padding: 12px;
-          float:left;
-          color: white;
-          background-color: #708090;
-          text-align: center;
-          cursor: pointer;
-          width: 300px;
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
 
-        }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+.prev, .next,.text {font-size: 11px}
 
   .footer{
       text-align: center;
@@ -167,73 +164,64 @@ p.site-name{
             overflow: hidden;
             height: 10px;
           }
-          /*coming soon*/
-    .booksTitleContainer{
-      width:100%;
-    }
-    .booksTitle {
-    /*display:inline-block;*/
-    background-color:#708090;
-    border-style: outset;
-    border-width: thick;
-    justify-content: center;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 30px 10px 30px;
-    width:330px;
-    margin-bottom: 40px;
-    text-align: center;
-    }
-    .vol1 {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            float: left;
-            max-width: 300px;
-            margin-left: 50px;
-            text-align: center;
-            font-family: arial;
-            padding-bottom: 20px;
-            font-size: 20px;
+          .mySlides {display: none}
+
+          div.mySlides img{
+            width:50%;
+            margin:auto;
+            height:auto;
+            display:block;
+            border: solid 1px #323232;
+            pointer-events: none;
           }
 
-  .vol1button {
-            padding: 12px;
-            float:left;
-            color: white;
-            background-color: #708090;
+          .slideshow-container {
+            width:90%;
+            margin: auto;
+            position: relative;
             text-align: center;
+          }
+
+
+          .prev, .next {
             cursor: pointer;
-            width: 300px;;
-          }
-
-          .vol1button a:hover {
-            opacity: 0.7;
-          }
-
-          .vol2 {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            float: left;
-            max-width: 300px;
-            margin-left: 50px;
-            text-align: center;
-            padding-bottom: 20px;
-            font-family: arial;
-            font-size: 20px;
-          }
-
-          .vol2button {
-            padding: 12px;
-            float:left;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
             color: white;
-            background-color: #708090;
-            text-align: center;
-            cursor: pointer;
-            width: 300px;
-
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.4);
           }
 
-          .vol2button a:hover {
-            opacity: 0.7;
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          .prev {
+            left: 0;
+            border-radius: 3px 0 0 3px;
+          }
+
+          .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+          }
+
+          /* Fading animation */
+          .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+            animation-fill-mode: forwards;
+          }
+
+          @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
           }
 
           .footer{
